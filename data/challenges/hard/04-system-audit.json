@@ -1,0 +1,18 @@
+{
+    "id": "hard-system-audit",
+    "order": 4,
+    "difficulty": "hard",
+    "title": {
+        "ru": "Аудит системы",
+        "en": "System Audit"
+    },
+    "description": {
+        "ru": "Создайте файл **~/audit.txt**, содержащий информацию о системе: версию ядра, имя хоста и текущую дату.",
+        "en": "Create a file **~/audit.txt** containing system information: kernel version, hostname, and current date."
+    },
+    "check": {
+        "type": "file_content",
+        "path": "/home/user/audit.txt",
+        "contains": "Linux"
+    }
+}

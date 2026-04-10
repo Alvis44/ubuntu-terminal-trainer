@@ -1,0 +1,237 @@
+{
+    "/": {
+        "type": "dir",
+        "permissions": "drwxr-xr-x",
+        "children": {
+            "home": {
+                "type": "dir",
+                "permissions": "drwxr-xr-x",
+                "children": {
+                    "user": {
+                        "type": "dir",
+                        "permissions": "drwxr-xr-x",
+                        "children": {
+                            "Documents": {
+                                "type": "dir",
+                                "permissions": "drwxr-xr-x",
+                                "children": {
+                                    "readme.txt": {
+                                        "type": "file",
+                                        "permissions": "-rw-r--r--",
+                                        "content": "Welcome to Ubuntu Console Simulator!\nThis is your Documents folder.\nFeel free to create and edit files here."
+                                    },
+                                    "notes.txt": {
+                                        "type": "file",
+                                        "permissions": "-rw-r--r--",
+                                        "content": "Shopping list:\n- milk\n- bread\n- eggs\n- butter\n- cheese"
+                                    },
+                                    "report.txt": {
+                                        "type": "file",
+                                        "permissions": "-rw-r--r--",
+                                        "content": "Project Report\n==============\nDate: 2024-01-15\nAuthor: user\nStatus: In Progress\n\nSection 1: Introduction\nThis project aims to improve system performance.\n\nSection 2: Analysis\nCurrent CPU usage: 45%\nCurrent Memory usage: 62%\nDisk space available: 120GB\n\nSection 3: Conclusion\nFurther optimization is needed."
+                                    }
+                                }
+                            },
+                            "Downloads": {
+                                "type": "dir",
+                                "permissions": "drwxr-xr-x",
+                                "children": {
+                                    "archive.tar.gz": {
+                                        "type": "file",
+                                        "permissions": "-rw-r--r--",
+                                        "content": "[binary data - archive]"
+                                    },
+                                    "image.png": {
+                                        "type": "file",
+                                        "permissions": "-rw-r--r--",
+                                        "content": "[binary data - image]"
+                                    }
+                                }
+                            },
+                            "Desktop": {
+                                "type": "dir",
+                                "permissions": "drwxr-xr-x",
+                                "children": {}
+                            },
+                            "Music": {
+                                "type": "dir",
+                                "permissions": "drwxr-xr-x",
+                                "children": {}
+                            },
+                            "Pictures": {
+                                "type": "dir",
+                                "permissions": "drwxr-xr-x",
+                                "children": {}
+                            },
+                            "Videos": {
+                                "type": "dir",
+                                "permissions": "drwxr-xr-x",
+                                "children": {}
+                            },
+                            ".bashrc": {
+                                "type": "file",
+                                "permissions": "-rw-r--r--",
+                                "content": "# ~/.bashrc: executed by bash for non-login shells.\nexport PATH=$PATH:/usr/local/bin\nexport EDITOR=nano\nalias ll='ls -la'\nalias la='ls -A'"
+                            },
+                            ".profile": {
+                                "type": "file",
+                                "permissions": "-rw-r--r--",
+                                "content": "# ~/.profile: executed by the command interpreter for login shells.\nif [ -f ~/.bashrc ]; then\n    . ~/.bashrc\nfi"
+                            }
+                        }
+                    }
+                }
+            },
+            "etc": {
+                "type": "dir",
+                "permissions": "drwxr-xr-x",
+                "children": {
+                    "hostname": {
+                        "type": "file",
+                        "permissions": "-rw-r--r--",
+                        "content": "ubuntu"
+                    },
+                    "passwd": {
+                        "type": "file",
+                        "permissions": "-rw-r--r--",
+                        "content": "root:x:0:0:root:/root:/bin/bash\ndaemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin\nuser:x:1000:1000:User:/home/user:/bin/bash\nnobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin"
+                    },
+                    "hosts": {
+                        "type": "file",
+                        "permissions": "-rw-r--r--",
+                        "content": "127.0.0.1\tlocalhost\n127.0.1.1\tubuntu\n::1\t\tlocalhost ip6-localhost ip6-loopback"
+                    },
+                    "os-release": {
+                        "type": "file",
+                        "permissions": "-rw-r--r--",
+                        "content": "NAME=\"Ubuntu\"\nVERSION=\"22.04.3 LTS (Jammy Jellyfish)\"\nID=ubuntu\nVERSION_ID=\"22.04\"\nHOME_URL=\"https://www.ubuntu.com/\""
+                    },
+                    "apt": {
+                        "type": "dir",
+                        "permissions": "drwxr-xr-x",
+                        "children": {
+                            "sources.list": {
+                                "type": "file",
+                                "permissions": "-rw-r--r--",
+                                "content": "deb http://archive.ubuntu.com/ubuntu jammy main restricted\ndeb http://archive.ubuntu.com/ubuntu jammy-updates main restricted"
+                            }
+                        }
+                    }
+                }
+            },
+            "var": {
+                "type": "dir",
+                "permissions": "drwxr-xr-x",
+                "children": {
+                    "log": {
+                        "type": "dir",
+                        "permissions": "drwxr-xr-x",
+                        "children": {
+                            "syslog": {
+                                "type": "file",
+                                "permissions": "-rw-r-----",
+                                "content": "Jan 15 10:00:01 ubuntu systemd[1]: Started Session 1 of user user.\nJan 15 10:00:02 ubuntu kernel: [    0.000000] Linux version 5.15.0-91-generic\nJan 15 10:00:03 ubuntu NetworkManager[892]: <info> device (eth0): state change: connected\nJan 15 10:01:15 ubuntu CRON[1234]: (root) CMD (command -v debian-sa1 > /dev/null)\nJan 15 10:05:01 ubuntu systemd[1]: Starting Daily apt download activities...\nJan 15 10:05:03 ubuntu systemd[1]: Started Daily apt download activities."
+                            },
+                            "auth.log": {
+                                "type": "file",
+                                "permissions": "-rw-r-----",
+                                "content": "Jan 15 09:58:12 ubuntu sshd[1100]: Accepted password for user from 192.168.1.10\nJan 15 09:58:12 ubuntu sshd[1100]: pam_unix(sshd:session): session opened for user\nJan 15 10:00:01 ubuntu sudo: user : TTY=pts/0 ; PWD=/home/user ; COMMAND=/bin/apt update"
+                            }
+                        }
+                    },
+                    "tmp": {
+                        "type": "dir",
+                        "permissions": "drwxrwxrwt",
+                        "children": {}
+                    }
+                }
+            },
+            "tmp": {
+                "type": "dir",
+                "permissions": "drwxrwxrwt",
+                "children": {
+                    "temp_data.txt": {
+                        "type": "file",
+                        "permissions": "-rw-r--r--",
+                        "content": "Temporary data file\nLine 2\nLine 3"
+                    }
+                }
+            },
+            "usr": {
+                "type": "dir",
+                "permissions": "drwxr-xr-x",
+                "children": {
+                    "bin": {
+                        "type": "dir",
+                        "permissions": "drwxr-xr-x",
+                        "children": {}
+                    },
+                    "local": {
+                        "type": "dir",
+                        "permissions": "drwxr-xr-x",
+                        "children": {
+                            "bin": {
+                                "type": "dir",
+                                "permissions": "drwxr-xr-x",
+                                "children": {}
+                            }
+                        }
+                    },
+                    "share": {
+                        "type": "dir",
+                        "permissions": "drwxr-xr-x",
+                        "children": {
+                            "doc": {
+                                "type": "dir",
+                                "permissions": "drwxr-xr-x",
+                                "children": {}
+                            }
+                        }
+                    }
+                }
+            },
+            "bin": {
+                "type": "dir",
+                "permissions": "drwxr-xr-x",
+                "children": {}
+            },
+            "root": {
+                "type": "dir",
+                "permissions": "drwx------",
+                "children": {}
+            },
+            "opt": {
+                "type": "dir",
+                "permissions": "drwxr-xr-x",
+                "children": {}
+            },
+            "dev": {
+                "type": "dir",
+                "permissions": "drwxr-xr-x",
+                "children": {
+                    "null": {
+                        "type": "file",
+                        "permissions": "crw-rw-rw-",
+                        "content": ""
+                    }
+                }
+            },
+            "proc": {
+                "type": "dir",
+                "permissions": "dr-xr-xr-x",
+                "children": {
+                    "cpuinfo": {
+                        "type": "file",
+                        "permissions": "-r--r--r--",
+                        "content": "processor\t: 0\nvendor_id\t: GenuineIntel\ncpu family\t: 6\nmodel name\t: Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz\ncpu MHz\t\t: 3600.000\ncache size\t: 12288 KB\ncpu cores\t: 8"
+                    },
+                    "meminfo": {
+                        "type": "file",
+                        "permissions": "-r--r--r--",
+                        "content": "MemTotal:       16384000 kB\nMemFree:         8192000 kB\nMemAvailable:   12288000 kB\nBuffers:          512000 kB\nCached:          3072000 kB\nSwapTotal:       2097152 kB\nSwapFree:        2097152 kB"
+                    }
+                }
+            }
+        }
+    }
+}

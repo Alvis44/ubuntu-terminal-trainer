@@ -1,0 +1,17 @@
+{
+    "id": "easy-read-file",
+    "order": 4,
+    "difficulty": "easy",
+    "title": {
+        "ru": "Прочитать файл",
+        "en": "Read a File"
+    },
+    "description": {
+        "ru": "Прочитайте содержимое файла **/etc/hostname**.",
+        "en": "Read the contents of the file **/etc/hostname**."
+    },
+    "check": {
+        "type": "command",
+        "pattern": "^cat\\s+/etc/hostname"
+    }
+}

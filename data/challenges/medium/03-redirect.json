@@ -1,0 +1,17 @@
+{
+    "id": "medium-redirect",
+    "order": 3,
+    "difficulty": "medium",
+    "title": {
+        "ru": "Перенаправление вывода",
+        "en": "Output Redirect"
+    },
+    "description": {
+        "ru": "Сохраните список файлов директории **/etc** в файл **~/filelist.txt**.",
+        "en": "Save the file listing of **/etc** directory to **~/filelist.txt**."
+    },
+    "check": {
+        "type": "file_exists",
+        "path": "/home/user/filelist.txt"
+    }
+}

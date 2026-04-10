@@ -1,0 +1,44 @@
+{
+    "id": "advanced-archives",
+    "order": 3,
+    "level": "advanced",
+    "title": {
+        "ru": "Архивы и сеть",
+        "en": "Archives and Network"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Создайте архив: **tar -czf archive.tar.gz Documents/**.",
+                "en": "Create an archive: **tar -czf archive.tar.gz Documents/**."
+            },
+            "validate": "^tar\\s+(-czf|czf)",
+            "hint": {
+                "ru": "Напишите: tar -czf archive.tar.gz Documents/",
+                "en": "Type: tar -czf archive.tar.gz Documents/"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите содержимое архива: **tar -tf archive.tar.gz**.",
+                "en": "List archive contents: **tar -tf archive.tar.gz**."
+            },
+            "validate": "^tar\\s+(-tf|tf)",
+            "hint": {
+                "ru": "Напишите: tar -tf archive.tar.gz",
+                "en": "Type: tar -tf archive.tar.gz"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Выполните HTTP-запрос: **curl https://example.com**.",
+                "en": "Make an HTTP request: **curl https://example.com**."
+            },
+            "validate": "^curl\\s+",
+            "hint": {
+                "ru": "Напишите: curl https://example.com",
+                "en": "Type: curl https://example.com"
+            }
+        }
+    ]
+}

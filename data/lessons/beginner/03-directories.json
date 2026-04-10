@@ -1,0 +1,66 @@
+{
+    "id": "basics-directories",
+    "order": 3,
+    "level": "beginner",
+    "title": {
+        "ru": "Работа с директориями",
+        "en": "Working with Directories"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Создайте новую директорию **myproject** с помощью **mkdir**.",
+                "en": "Create a new directory **myproject** using **mkdir**."
+            },
+            "validate": "^mkdir\\s+myproject",
+            "hint": {
+                "ru": "Напишите: mkdir myproject",
+                "en": "Type: mkdir myproject"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Перейдите в созданную директорию: **cd myproject**.",
+                "en": "Navigate into the directory: **cd myproject**."
+            },
+            "validate": "^cd\\s+myproject",
+            "hint": {
+                "ru": "Напишите: cd myproject",
+                "en": "Type: cd myproject"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Создайте файл **app.js** внутри: **touch app.js**.",
+                "en": "Create a file **app.js** inside: **touch app.js**."
+            },
+            "validate": "^touch\\s+app\\.js",
+            "hint": {
+                "ru": "Напишите: touch app.js",
+                "en": "Type: touch app.js"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Скопируйте файл: **cp app.js app_backup.js**.",
+                "en": "Copy the file: **cp app.js app_backup.js**."
+            },
+            "validate": "^cp\\s+app\\.js\\s+app_backup\\.js",
+            "hint": {
+                "ru": "Напишите: cp app.js app_backup.js",
+                "en": "Type: cp app.js app_backup.js"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Переименуйте копию: **mv app_backup.js backup.js**.",
+                "en": "Rename the copy: **mv app_backup.js backup.js**."
+            },
+            "validate": "^mv\\s+app_backup\\.js\\s+backup\\.js",
+            "hint": {
+                "ru": "Напишите: mv app_backup.js backup.js",
+                "en": "Type: mv app_backup.js backup.js"
+            }
+        }
+    ]
+}

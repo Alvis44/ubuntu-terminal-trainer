@@ -1,0 +1,17 @@
+{
+    "id": "medium-find-txt",
+    "order": 1,
+    "difficulty": "medium",
+    "title": {
+        "ru": "Найти файлы",
+        "en": "Find Files"
+    },
+    "description": {
+        "ru": "Найдите все файлы с расширением **.txt** в домашней директории (~).",
+        "en": "Find all files with **.txt** extension in the home directory (~)."
+    },
+    "check": {
+        "type": "command",
+        "pattern": "^find\\s+~.*-name.*\\.txt"
+    }
+}

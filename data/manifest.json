@@ -1,0 +1,43 @@
+{
+    "lessons": [
+        "lessons/advanced/01-packages.json",
+        "lessons/advanced/02-processes.json",
+        "lessons/advanced/03-archives.json",
+        "lessons/advanced/04-links.json",
+        "lessons/advanced/05-text-advanced.json",
+        "lessons/advanced/06-environment.json",
+        "lessons/advanced/07-compound.json",
+        "lessons/beginner/01-navigation.json",
+        "lessons/beginner/02-files.json",
+        "lessons/beginner/03-directories.json",
+        "lessons/beginner/04-reading.json",
+        "lessons/beginner/05-help.json",
+        "lessons/intermediate/01-search.json",
+        "lessons/intermediate/02-pipes.json",
+        "lessons/intermediate/03-text.json",
+        "lessons/intermediate/04-permissions.json",
+        "lessons/intermediate/05-system.json"
+    ],
+    "challenges": [
+        "challenges/easy/01-create-file.json",
+        "challenges/easy/02-navigate.json",
+        "challenges/easy/03-list-sorted.json",
+        "challenges/easy/04-read-file.json",
+        "challenges/easy/05-mkdir-tree.json",
+        "challenges/hard/01-pipeline.json",
+        "challenges/hard/02-find-replace.json",
+        "challenges/hard/03-process-mgmt.json",
+        "challenges/hard/04-system-audit.json",
+        "challenges/hard/05-complex-search.json",
+        "challenges/hard/06-multi-transform.json",
+        "challenges/hard/07-data-analysis.json",
+        "challenges/hard/08-log-processing.json",
+        "challenges/medium/01-find-txt.json",
+        "challenges/medium/02-count-lines.json",
+        "challenges/medium/03-redirect.json",
+        "challenges/medium/04-grep-pattern.json",
+        "challenges/medium/05-permissions.json",
+        "challenges/medium/06-cut-columns.json",
+        "challenges/medium/07-translate-text.json"
+    ]
+}

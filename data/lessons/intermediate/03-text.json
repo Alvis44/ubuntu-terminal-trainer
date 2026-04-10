@@ -1,0 +1,55 @@
+{
+    "id": "intermediate-text",
+    "order": 3,
+    "level": "intermediate",
+    "title": {
+        "ru": "Обработка текста: sed, awk, sort",
+        "en": "Text Processing: sed, awk, sort"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Перейдите в ~/Documents: **cd ~/Documents**.",
+                "en": "Navigate to ~/Documents: **cd ~/Documents**."
+            },
+            "validate": "^cd\\s+~/Documents",
+            "hint": {
+                "ru": "cd ~/Documents",
+                "en": "cd ~/Documents"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Замените слово с помощью sed: **sed 's/user/admin/' report.txt**.",
+                "en": "Replace a word with sed: **sed 's/user/admin/' report.txt**."
+            },
+            "validate": "^sed\\s+['\"]?s/user/admin/",
+            "hint": {
+                "ru": "Напишите: sed 's/user/admin/' report.txt",
+                "en": "Type: sed 's/user/admin/' report.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Отсортируйте строки файла notes.txt: **sort notes.txt**.",
+                "en": "Sort the lines of notes.txt: **sort notes.txt**."
+            },
+            "validate": "^sort\\s+notes\\.txt",
+            "hint": {
+                "ru": "Напишите: sort notes.txt",
+                "en": "Type: sort notes.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Выведите только первое поле: **cat /etc/passwd | awk '{print $1}'**.",
+                "en": "Print only the first field: **cat /etc/passwd | awk '{print $1}'**."
+            },
+            "validate": "cat\\s+/etc/passwd\\s*\\|\\s*awk",
+            "hint": {
+                "ru": "Напишите: cat /etc/passwd | awk '{print $1}'",
+                "en": "Type: cat /etc/passwd | awk '{print $1}'"
+            }
+        }
+    ]
+}

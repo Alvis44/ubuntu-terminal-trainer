@@ -1,0 +1,18 @@
+{
+    "id": "medium-cut-columns",
+    "order": 6,
+    "difficulty": "medium",
+    "title": {
+        "ru": "Извлечь поля",
+        "en": "Extract Fields"
+    },
+    "description": {
+        "ru": "Извлеките имена пользователей (первое поле, разделитель `:`) из файла `/etc/passwd`. Сохраните результат в `/tmp/users.txt`.",
+        "en": "Extract usernames (first field, delimiter `:`) from `/etc/passwd`. Save the result to `/tmp/users.txt`."
+    },
+    "check": {
+        "type": "file_content",
+        "path": "/tmp/users.txt",
+        "contains": "root"
+    }
+}

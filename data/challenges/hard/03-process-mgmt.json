@@ -1,0 +1,17 @@
+{
+    "id": "hard-process-mgmt",
+    "order": 3,
+    "difficulty": "hard",
+    "title": {
+        "ru": "Информация о процессах",
+        "en": "Process Information"
+    },
+    "description": {
+        "ru": "Найдите среди запущенных процессов тот, который называется **sshd**.",
+        "en": "Find the running process named **sshd** among all system processes."
+    },
+    "check": {
+        "type": "command",
+        "pattern": "ps\\s+aux\\s*\\|\\s*grep\\s+sshd"
+    }
+}

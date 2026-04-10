@@ -1,0 +1,44 @@
+{
+    "id": "advanced-packages",
+    "order": 1,
+    "level": "advanced",
+    "title": {
+        "ru": "Управление пакетами",
+        "en": "Package Management"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Обновите список пакетов: **sudo apt update**.",
+                "en": "Update the package list: **sudo apt update**."
+            },
+            "validate": "^sudo\\s+apt\\s+update",
+            "hint": {
+                "ru": "Напишите: sudo apt update",
+                "en": "Type: sudo apt update"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Установите пакет htop: **sudo apt install htop**.",
+                "en": "Install the htop package: **sudo apt install htop**."
+            },
+            "validate": "^sudo\\s+apt\\s+install\\s+htop",
+            "hint": {
+                "ru": "Напишите: sudo apt install htop",
+                "en": "Type: sudo apt install htop"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите установленные пакеты: **apt list --installed**.",
+                "en": "List installed packages: **apt list --installed**."
+            },
+            "validate": "^apt\\s+list\\s+--installed",
+            "hint": {
+                "ru": "Напишите: apt list --installed",
+                "en": "Type: apt list --installed"
+            }
+        }
+    ]
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubuntu Console Simulator</title>
+    <link rel="stylesheet" href="https://unpkg.com/@xterm/xterm@5.5.0/css/xterm.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header -->
+        <header id="header">
+            <div class="header-left">
+                <span class="logo">&#9638; Ubuntu Terminal Trainer</span>
+            </div>
+            <div class="header-right">
+                <div id="lang-toggle" class="lang-switch" title="Switch language">
+                    <span class="lang-option" data-lang="ru">RU</span>
+                    <span class="lang-option" data-lang="en">EN</span>
+                    <span class="lang-slider"></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Welcome Screen -->
+        <div id="welcome-screen" class="screen active">
+            <div class="welcome-content">
+                <h1 id="welcome-title">Ubuntu Console Simulator</h1>
+                <p id="welcome-subtitle" class="subtitle"></p>
+                <div class="mode-cards">
+                    <div class="mode-card" data-mode="learn">
+                        <div class="mode-icon">&#128218;</div>
+                        <h2 data-i18n="mode_learn">Learn</h2>
+                        <p data-i18n="mode_learn_desc">Step-by-step lessons from basics to advanced</p>
+                    </div>
+                    <div class="mode-card" data-mode="sandbox">
+                        <div class="mode-icon">&#129514;</div>
+                        <h2 data-i18n="mode_sandbox">Sandbox</h2>
+                        <p data-i18n="mode_sandbox_desc">Free environment to practice commands</p>
+                    </div>
+                    <div class="mode-card" data-mode="challenges">
+                        <div class="mode-icon">&#127942;</div>
+                        <h2 data-i18n="mode_challenges">Challenges</h2>
+                        <p data-i18n="mode_challenges_desc">Test your skills with tasks of varying difficulty</p>
+                    </div>
+                </div>
+                <p class="feedback-note" data-i18n="feedback_note">Found a bug? Let us know!</p>
+                <div class="footer-links">
+                    <a href="https://github.com/Alvis44" target="_blank" rel="noopener">&#128100; <span data-i18n="author">Author</span></a>
+                    <span class="footer-sep">&middot;</span>
+                    <a href="https://pay.cloudtips.ru/p/cd42a9bf" target="_blank" rel="noopener">&#9749; <span data-i18n="donate">Buy me a coffee</span></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main App Screen -->
+        <div id="main-screen" class="screen">
+            <!-- Sidebar -->
+            <aside id="sidebar">
+                <div class="sidebar-header">
+                    <button id="btn-back" class="btn-back" data-i18n="back">&larr; Back</button>
+                    <h3 id="sidebar-title"></h3>
+                </div>
+                <div id="sidebar-content"></div>
+            </aside>
+
+            <!-- Main Content -->
+            <main id="main-content">
+                <!-- Lesson/Challenge info panel -->
+                <div id="info-panel" class="info-panel hidden">
+                    <div id="info-panel-content"></div>
+                </div>
+                <!-- Terminal -->
+                <div id="terminal-container"></div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/@xterm/xterm@5.5.0/lib/xterm.js"></script>
+    <script src="https://unpkg.com/@xterm/addon-fit@0.10.0/lib/addon-fit.js"></script>
+    <script type="module" src="js/app.js"></script>
+</body>
+</html>

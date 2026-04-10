@@ -1,0 +1,66 @@
+{
+    "id": "advanced-compound",
+    "order": 7,
+    "level": "advanced",
+    "title": {
+        "ru": "Составные команды",
+        "en": "Compound Commands"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Сгенерируйте последовательность чисел от 1 до 10 с помощью команды **seq 10**.",
+                "en": "Generate a sequence of numbers from 1 to 10 using the **seq 10** command."
+            },
+            "validate": "^seq\\s+10",
+            "hint": {
+                "ru": "Напишите: seq 10",
+                "en": "Type: seq 10"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Сгенерируйте нечётные числа и сохраните их в файл: **seq 1 2 20 > /tmp/odds.txt**. Второй аргумент — это шаг.",
+                "en": "Generate odd numbers and save them to a file: **seq 1 2 20 > /tmp/odds.txt**. The second argument is the step value."
+            },
+            "validate": "^seq.*>.*odds",
+            "hint": {
+                "ru": "Напишите: seq 1 2 20 > /tmp/odds.txt",
+                "en": "Type: seq 1 2 20 > /tmp/odds.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Подсчитайте количество строк в файле: **wc -l /tmp/odds.txt**. Флаг `-l` считает только строки.",
+                "en": "Count how many lines are in the file: **wc -l /tmp/odds.txt**. The `-l` flag counts only lines."
+            },
+            "validate": "^wc\\s+-l.*odds",
+            "hint": {
+                "ru": "Напишите: wc -l /tmp/odds.txt",
+                "en": "Type: wc -l /tmp/odds.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Объедините **find** и **wc** для подсчёта всех `.txt` файлов: `find /tmp -name '*.txt' | wc -l`. Конвейер `|` передаёт вывод одной команды на вход другой.",
+                "en": "Chain **find** and **wc** to count all `.txt` files: `find /tmp -name '*.txt' | wc -l`. The pipe `|` passes the output of one command as input to another."
+            },
+            "validate": "find.*\\|.*wc",
+            "hint": {
+                "ru": "Напишите: find /tmp -name '*.txt' | wc -l",
+                "en": "Type: find /tmp -name '*.txt' | wc -l"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Постройте сложный конвейер — сгенерируйте числа, отфильтруйте чётные и отсортируйте в обратном порядке: `seq 20 | grep '[02468]$' | sort -rn`.",
+                "en": "Build a complex pipeline — generate numbers, filter even ones, and sort in reverse: `seq 20 | grep '[02468]$' | sort -rn`."
+            },
+            "validate": "seq.*\\|.*grep.*\\|.*sort",
+            "hint": {
+                "ru": "Напишите: seq 20 | grep '[02468]$' | sort -rn",
+                "en": "Type: seq 20 | grep '[02468]$' | sort -rn"
+            }
+        }
+    ]
+}

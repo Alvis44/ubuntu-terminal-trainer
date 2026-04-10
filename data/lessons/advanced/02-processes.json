@@ -1,0 +1,44 @@
+{
+    "id": "advanced-processes",
+    "order": 2,
+    "level": "advanced",
+    "title": {
+        "ru": "Управление процессами",
+        "en": "Process Management"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Посмотрите все процессы: **ps -e**.",
+                "en": "View all processes: **ps -e**."
+            },
+            "validate": "^ps\\s+(-e|-A)",
+            "hint": {
+                "ru": "Напишите: ps -e",
+                "en": "Type: ps -e"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите монитор системы: **top**.",
+                "en": "View the system monitor: **top**."
+            },
+            "validate": "^top$",
+            "hint": {
+                "ru": "Напишите: top",
+                "en": "Type: top"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите процессы в подробном формате: **ps aux**.",
+                "en": "View processes in detailed format: **ps aux**."
+            },
+            "validate": "^ps\\s+aux",
+            "hint": {
+                "ru": "Напишите: ps aux",
+                "en": "Type: ps aux"
+            }
+        }
+    ]
+}

@@ -1,0 +1,17 @@
+{
+    "id": "medium-grep-pattern",
+    "order": 4,
+    "difficulty": "medium",
+    "title": {
+        "ru": "Поиск по шаблону",
+        "en": "Pattern Search"
+    },
+    "description": {
+        "ru": "Найдите все строки, содержащие слово **root**, в файле **/etc/passwd**.",
+        "en": "Find all lines containing the word **root** in **/etc/passwd**."
+    },
+    "check": {
+        "type": "command",
+        "pattern": "^grep\\s+.*root.*\\s+/etc/passwd"
+    }
+}

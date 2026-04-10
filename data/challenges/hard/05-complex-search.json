@@ -1,0 +1,17 @@
+{
+    "id": "hard-complex-search",
+    "order": 5,
+    "difficulty": "hard",
+    "title": {
+        "ru": "Комплексный поиск",
+        "en": "Complex Search"
+    },
+    "description": {
+        "ru": "Подсчитайте, сколько файлов в директории **/etc** содержат слово **host** в названии.",
+        "en": "Count how many files in the **/etc** directory have the word **host** in their name."
+    },
+    "check": {
+        "type": "command",
+        "pattern": "find\\s+/etc.*\\|.*grep.*host.*\\|.*wc"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "id": "easy-mkdir-tree",
+    "order": 5,
+    "difficulty": "easy",
+    "title": {
+        "ru": "Создать дерево директорий",
+        "en": "Create Directory Tree"
+    },
+    "description": {
+        "ru": "Создайте вложенные директории **~/projects/webapp/src** одной командой.",
+        "en": "Create nested directories **~/projects/webapp/src** with a single command."
+    },
+    "check": {
+        "type": "dir_exists",
+        "path": "/home/user/projects/webapp/src"
+    }
+}

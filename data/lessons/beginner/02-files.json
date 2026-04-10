@@ -1,0 +1,55 @@
+{
+    "id": "basics-files",
+    "order": 2,
+    "level": "beginner",
+    "title": {
+        "ru": "Работа с файлами",
+        "en": "Working with Files"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Создайте пустой файл **hello.txt** с помощью команды **touch**.",
+                "en": "Create an empty file **hello.txt** using **touch**."
+            },
+            "validate": "^touch\\s+hello\\.txt",
+            "hint": {
+                "ru": "Напишите: touch hello.txt",
+                "en": "Type: touch hello.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Запишите текст в файл: **echo 'Hello World' > hello.txt**",
+                "en": "Write text to the file: **echo 'Hello World' > hello.txt**"
+            },
+            "validate": "^echo\\s+.*>\\s*hello\\.txt",
+            "hint": {
+                "ru": "Напишите: echo 'Hello World' > hello.txt",
+                "en": "Type: echo 'Hello World' > hello.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Прочитайте содержимое файла с помощью **cat hello.txt**.",
+                "en": "Read the file contents with **cat hello.txt**."
+            },
+            "validate": "^cat\\s+hello\\.txt",
+            "hint": {
+                "ru": "Напишите: cat hello.txt",
+                "en": "Type: cat hello.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Удалите файл командой **rm hello.txt**.",
+                "en": "Delete the file with **rm hello.txt**."
+            },
+            "validate": "^rm\\s+hello\\.txt",
+            "hint": {
+                "ru": "Напишите: rm hello.txt",
+                "en": "Type: rm hello.txt"
+            }
+        }
+    ]
+}

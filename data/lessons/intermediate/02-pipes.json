@@ -1,0 +1,55 @@
+{
+    "id": "intermediate-pipes",
+    "order": 2,
+    "level": "intermediate",
+    "title": {
+        "ru": "Пайпы и перенаправления",
+        "en": "Pipes and Redirects"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Запишите текст в файл: **echo 'Hello' > test.txt**.",
+                "en": "Write text to a file: **echo 'Hello' > test.txt**."
+            },
+            "validate": "^echo\\s+.*>\\s*test\\.txt",
+            "hint": {
+                "ru": "Напишите: echo 'Hello' > test.txt",
+                "en": "Type: echo 'Hello' > test.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Добавьте ещё строку: **echo 'World' >> test.txt**.",
+                "en": "Append another line: **echo 'World' >> test.txt**."
+            },
+            "validate": "^echo\\s+.*>>\\s*test\\.txt",
+            "hint": {
+                "ru": "Напишите: echo 'World' >> test.txt",
+                "en": "Type: echo 'World' >> test.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Используйте пайп — посчитайте строки в выводе ls: **ls ~ | wc -l**.",
+                "en": "Use a pipe to count lines in ls output: **ls ~ | wc -l**."
+            },
+            "validate": "^ls\\s+.*\\|\\s*wc\\s+-l",
+            "hint": {
+                "ru": "Напишите: ls ~ | wc -l",
+                "en": "Type: ls ~ | wc -l"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Найдите файлы и отфильтруйте: **find ~ -name '*.txt' | grep Documents**.",
+                "en": "Find files and filter: **find ~ -name '*.txt' | grep Documents**."
+            },
+            "validate": "^find\\s+.*\\|\\s*grep\\s+Documents",
+            "hint": {
+                "ru": "Напишите: find ~ -name '*.txt' | grep Documents",
+                "en": "Type: find ~ -name '*.txt' | grep Documents"
+            }
+        }
+    ]
+}

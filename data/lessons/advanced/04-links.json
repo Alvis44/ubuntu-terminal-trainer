@@ -1,0 +1,55 @@
+{
+    "id": "advanced-links",
+    "order": 4,
+    "level": "advanced",
+    "title": {
+        "ru": "Символические ссылки",
+        "en": "Symbolic Links"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Создайте тестовый файл с помощью команды **echo**: `echo 'original content' > /tmp/original.txt`.",
+                "en": "Create a test file using the **echo** command: `echo 'original content' > /tmp/original.txt`."
+            },
+            "validate": "^echo.*>.*original",
+            "hint": {
+                "ru": "Напишите: echo 'original content' > /tmp/original.txt",
+                "en": "Type: echo 'original content' > /tmp/original.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Создайте символическую ссылку на файл с помощью **ln -s**: `ln -s /tmp/original.txt /tmp/link.txt`. Символическая ссылка — это указатель на другой файл.",
+                "en": "Create a symbolic link to the file using **ln -s**: `ln -s /tmp/original.txt /tmp/link.txt`. A symbolic link is a pointer to another file."
+            },
+            "validate": "^ln\\s+-s",
+            "hint": {
+                "ru": "Напишите: ln -s /tmp/original.txt /tmp/link.txt",
+                "en": "Type: ln -s /tmp/original.txt /tmp/link.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Прочитайте содержимое ссылки, чтобы убедиться, что она работает: **cat /tmp/link.txt**. Вы увидите содержимое оригинального файла.",
+                "en": "Read the link's contents to verify it works: **cat /tmp/link.txt**. You will see the original file's content."
+            },
+            "validate": "^cat.*link",
+            "hint": {
+                "ru": "Напишите: cat /tmp/link.txt",
+                "en": "Type: cat /tmp/link.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите подробную информацию о файлах в каталоге: **ls -l /tmp/**. Вы увидите стрелку `->`, указывающую на оригинальный файл.",
+                "en": "View detailed file information in the directory: **ls -l /tmp/**. You will see an arrow `->` pointing to the original file."
+            },
+            "validate": "^ls\\s+-l",
+            "hint": {
+                "ru": "Напишите: ls -l /tmp/",
+                "en": "Type: ls -l /tmp/"
+            }
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "id": "intermediate-search",
+    "order": 1,
+    "level": "intermediate",
+    "title": {
+        "ru": "Поиск: grep и find",
+        "en": "Search: grep and find"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Перейдите в ~/Documents: **cd ~/Documents**.",
+                "en": "Navigate to ~/Documents: **cd ~/Documents**."
+            },
+            "validate": "^cd\\s+~/Documents",
+            "hint": {
+                "ru": "Напишите: cd ~/Documents",
+                "en": "Type: cd ~/Documents"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Найдите слово 'user' в файле report.txt: **grep user report.txt**.",
+                "en": "Find the word 'user' in report.txt: **grep user report.txt**."
+            },
+            "validate": "^grep\\s+user\\s+report\\.txt",
+            "hint": {
+                "ru": "Напишите: grep user report.txt",
+                "en": "Type: grep user report.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Найдите все .txt файлы в домашней директории: **find ~ -name '*.txt'**.",
+                "en": "Find all .txt files in home directory: **find ~ -name '*.txt'**."
+            },
+            "validate": "^find\\s+~\\s+-name\\s+['\"]?\\*\\.txt",
+            "hint": {
+                "ru": "Напишите: find ~ -name '*.txt'",
+                "en": "Type: find ~ -name '*.txt'"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Поиск без учёта регистра: **grep -i 'section' report.txt**.",
+                "en": "Case-insensitive search: **grep -i 'section' report.txt**."
+            },
+            "validate": "^grep\\s+-i\\s+.*section.*\\s+report\\.txt",
+            "hint": {
+                "ru": "Напишите: grep -i 'section' report.txt",
+                "en": "Type: grep -i 'section' report.txt"
+            }
+        }
+    ]
+}

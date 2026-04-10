@@ -1,0 +1,66 @@
+{
+    "id": "basics-reading",
+    "order": 4,
+    "level": "beginner",
+    "title": {
+        "ru": "Чтение файлов",
+        "en": "Reading Files"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Перейдите в ~/Documents: **cd ~/Documents**.",
+                "en": "Navigate to ~/Documents: **cd ~/Documents**."
+            },
+            "validate": "^cd\\s+~/Documents",
+            "hint": {
+                "ru": "Напишите: cd ~/Documents",
+                "en": "Type: cd ~/Documents"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите содержимое файла report.txt: **cat report.txt**.",
+                "en": "View the contents of report.txt: **cat report.txt**."
+            },
+            "validate": "^cat\\s+report\\.txt",
+            "hint": {
+                "ru": "Напишите: cat report.txt",
+                "en": "Type: cat report.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Покажите первые 3 строки: **head -n 3 report.txt**.",
+                "en": "Show the first 3 lines: **head -n 3 report.txt**."
+            },
+            "validate": "^head\\s+(-n\\s+)?3\\s+report\\.txt",
+            "hint": {
+                "ru": "Напишите: head -n 3 report.txt",
+                "en": "Type: head -n 3 report.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Покажите последние 5 строк: **tail -n 5 report.txt**.",
+                "en": "Show the last 5 lines: **tail -n 5 report.txt**."
+            },
+            "validate": "^tail\\s+(-n\\s+)?5\\s+report\\.txt",
+            "hint": {
+                "ru": "Напишите: tail -n 5 report.txt",
+                "en": "Type: tail -n 5 report.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посчитайте количество строк: **wc -l report.txt**.",
+                "en": "Count the number of lines: **wc -l report.txt**."
+            },
+            "validate": "^wc\\s+-l\\s+report\\.txt",
+            "hint": {
+                "ru": "Напишите: wc -l report.txt",
+                "en": "Type: wc -l report.txt"
+            }
+        }
+    ]
+}

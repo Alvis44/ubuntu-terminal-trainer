@@ -1,0 +1,55 @@
+{
+    "id": "intermediate-permissions",
+    "order": 4,
+    "level": "intermediate",
+    "title": {
+        "ru": "Права доступа",
+        "en": "File Permissions"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Посмотрите права файлов: **ls -l ~/Documents**.",
+                "en": "View file permissions: **ls -l ~/Documents**."
+            },
+            "validate": "^ls\\s+-l\\s+~/Documents",
+            "hint": {
+                "ru": "Напишите: ls -l ~/Documents",
+                "en": "Type: ls -l ~/Documents"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Создайте скрипт: **echo '#!/bin/bash' > ~/script.sh**.",
+                "en": "Create a script: **echo '#!/bin/bash' > ~/script.sh**."
+            },
+            "validate": "^echo\\s+.*>\\s*.*script\\.sh",
+            "hint": {
+                "ru": "Напишите: echo '#!/bin/bash' > ~/script.sh",
+                "en": "Type: echo '#!/bin/bash' > ~/script.sh"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Сделайте его исполняемым: **chmod 755 ~/script.sh**.",
+                "en": "Make it executable: **chmod 755 ~/script.sh**."
+            },
+            "validate": "^chmod\\s+755\\s+.*script\\.sh",
+            "hint": {
+                "ru": "Напишите: chmod 755 ~/script.sh",
+                "en": "Type: chmod 755 ~/script.sh"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Проверьте изменение прав: **ls -l ~/script.sh**.",
+                "en": "Verify the permission change: **ls -l ~/script.sh**."
+            },
+            "validate": "^ls\\s+-l\\s+.*script\\.sh",
+            "hint": {
+                "ru": "Напишите: ls -l ~/script.sh",
+                "en": "Type: ls -l ~/script.sh"
+            }
+        }
+    ]
+}

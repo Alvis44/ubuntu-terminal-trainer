@@ -1,0 +1,18 @@
+{
+    "id": "hard-log-processing",
+    "order": 8,
+    "difficulty": "hard",
+    "title": {
+        "ru": "Обработка логов",
+        "en": "Log Processing"
+    },
+    "description": {
+        "ru": "Найдите в `/var/log/syslog` все строки, содержащие `systemd` (без учёта регистра), и сохраните их в `/tmp/systemd-logs.txt`.",
+        "en": "Find all lines in `/var/log/syslog` containing `systemd` (case insensitive) and save them to `/tmp/systemd-logs.txt`."
+    },
+    "check": {
+        "type": "file_content",
+        "path": "/tmp/systemd-logs.txt",
+        "contains": "systemd"
+    }
+}

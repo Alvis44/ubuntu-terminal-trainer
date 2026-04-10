@@ -1,0 +1,18 @@
+{
+    "id": "hard-multi-transform",
+    "order": 6,
+    "difficulty": "hard",
+    "title": {
+        "ru": "Цепочка трансформаций",
+        "en": "Transformation Chain"
+    },
+    "description": {
+        "ru": "Извлеките имена пользователей из `/etc/passwd` (первое поле, разделитель `:`), отсортируйте по алфавиту и сохраните в `/tmp/sorted-users.txt`.",
+        "en": "Extract usernames from `/etc/passwd` (first field, `:` delimiter), sort alphabetically, and save to `/tmp/sorted-users.txt`."
+    },
+    "check": {
+        "type": "file_content",
+        "path": "/tmp/sorted-users.txt",
+        "contains": "root"
+    }
+}

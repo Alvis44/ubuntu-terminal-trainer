@@ -1,0 +1,17 @@
+{
+    "id": "hard-data-analysis",
+    "order": 7,
+    "difficulty": "hard",
+    "title": {
+        "ru": "Анализ данных",
+        "en": "Data Analysis"
+    },
+    "description": {
+        "ru": "Подсчитайте количество строк в файле `/var/log/syslog` и сохраните результат в `/tmp/line-count.txt`.",
+        "en": "Count the number of lines in `/var/log/syslog` and save the result to `/tmp/line-count.txt`."
+    },
+    "check": {
+        "type": "file_exists",
+        "path": "/tmp/line-count.txt"
+    }
+}

@@ -1,0 +1,44 @@
+{
+    "id": "basics-help",
+    "order": 5,
+    "level": "beginner",
+    "title": {
+        "ru": "Справка по командам",
+        "en": "Getting Help"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Откройте справку по команде ls: **man ls**.",
+                "en": "Open the manual for ls: **man ls**."
+            },
+            "validate": "^man\\s+ls",
+            "hint": {
+                "ru": "Напишите: man ls",
+                "en": "Type: man ls"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите все доступные команды: **help**.",
+                "en": "See all available commands: **help**."
+            },
+            "validate": "^help$",
+            "hint": {
+                "ru": "Напишите: help",
+                "en": "Type: help"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите справку по grep: **man grep**.",
+                "en": "Read the manual for grep: **man grep**."
+            },
+            "validate": "^man\\s+grep",
+            "hint": {
+                "ru": "Напишите: man grep",
+                "en": "Type: man grep"
+            }
+        }
+    ]
+}

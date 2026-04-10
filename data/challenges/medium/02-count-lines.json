@@ -1,0 +1,17 @@
+{
+    "id": "medium-count-lines",
+    "order": 2,
+    "difficulty": "medium",
+    "title": {
+        "ru": "Подсчитать строки",
+        "en": "Count Lines"
+    },
+    "description": {
+        "ru": "Подсчитайте количество строк в файле **/etc/passwd**.",
+        "en": "Count the number of lines in **/etc/passwd**."
+    },
+    "check": {
+        "type": "command",
+        "pattern": "wc\\s+-l\\s+/etc/passwd"
+    }
+}

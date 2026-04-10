@@ -1,0 +1,17 @@
+{
+    "id": "easy-navigate",
+    "order": 2,
+    "difficulty": "easy",
+    "title": {
+        "ru": "Навигация по директориям",
+        "en": "Directory Navigation"
+    },
+    "description": {
+        "ru": "Перейдите в директорию **/var/log**.",
+        "en": "Navigate to the **/var/log** directory."
+    },
+    "check": {
+        "type": "cwd",
+        "path": "/var/log"
+    }
+}

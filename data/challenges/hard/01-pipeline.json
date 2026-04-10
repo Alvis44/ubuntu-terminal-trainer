@@ -1,0 +1,17 @@
+{
+    "id": "hard-pipeline",
+    "order": 1,
+    "difficulty": "hard",
+    "title": {
+        "ru": "Конвейер данных",
+        "en": "Data Pipeline"
+    },
+    "description": {
+        "ru": "Подсчитайте, сколько строк в файле **/var/log/syslog** содержат слово **systemd**.",
+        "en": "Count how many lines in **/var/log/syslog** contain the word **systemd**."
+    },
+    "check": {
+        "type": "command",
+        "pattern": "grep.*systemd.*/var/log/syslog.*\\|.*wc"
+    }
+}

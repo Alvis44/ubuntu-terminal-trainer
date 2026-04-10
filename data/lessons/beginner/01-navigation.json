@@ -1,0 +1,66 @@
+{
+    "id": "basics-navigation",
+    "order": 1,
+    "level": "beginner",
+    "title": {
+        "ru": "Первые шаги: навигация",
+        "en": "First Steps: Navigation"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Узнайте, в какой директории вы находитесь. Введите команду **pwd** (print working directory).",
+                "en": "Find out which directory you're in. Type **pwd** (print working directory)."
+            },
+            "validate": "^pwd$",
+            "hint": {
+                "ru": "Просто напишите: pwd",
+                "en": "Type: pwd"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите, что находится в текущей директории. Введите **ls**.",
+                "en": "See what's in the current directory. Type **ls**."
+            },
+            "validate": "^ls",
+            "hint": {
+                "ru": "Напишите: ls",
+                "en": "Type: ls"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Перейдите в папку Documents. Используйте команду **cd Documents**.",
+                "en": "Navigate to the Documents folder. Use **cd Documents**."
+            },
+            "validate": "^cd\\s+Documents",
+            "hint": {
+                "ru": "Напишите: cd Documents",
+                "en": "Type: cd Documents"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Проверьте, что вы перешли. Снова введите **pwd**.",
+                "en": "Verify you moved. Type **pwd** again."
+            },
+            "validate": "^pwd$",
+            "hint": {
+                "ru": "Напишите: pwd",
+                "en": "Type: pwd"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Вернитесь на уровень выше с помощью **cd ..**",
+                "en": "Go back up one level with **cd ..**"
+            },
+            "validate": "^cd\\s+\\.\\.",
+            "hint": {
+                "ru": "Напишите: cd ..",
+                "en": "Type: cd .."
+            }
+        }
+    ]
+}

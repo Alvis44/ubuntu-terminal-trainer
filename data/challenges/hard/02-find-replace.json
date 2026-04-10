@@ -1,0 +1,18 @@
+{
+    "id": "hard-find-replace",
+    "order": 2,
+    "difficulty": "hard",
+    "title": {
+        "ru": "Найти и заменить",
+        "en": "Find and Replace"
+    },
+    "description": {
+        "ru": "Замените все вхождения слова **user** на **admin** в файле **~/Documents/report.txt** и сохраните результат в **~/Documents/report_new.txt**.",
+        "en": "Replace all occurrences of **user** with **admin** in **~/Documents/report.txt** and save the result to **~/Documents/report_new.txt**."
+    },
+    "check": {
+        "type": "file_content",
+        "path": "/home/user/Documents/report_new.txt",
+        "contains": "admin"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "id": "medium-translate-text",
+    "order": 7,
+    "difficulty": "medium",
+    "title": {
+        "ru": "Преобразовать текст",
+        "en": "Transform Text"
+    },
+    "description": {
+        "ru": "Создайте файл `/tmp/upper.txt`, содержащий текст `HELLO WORLD` (в верхнем регистре).",
+        "en": "Create file `/tmp/upper.txt` containing the text `HELLO WORLD` (uppercase)."
+    },
+    "check": {
+        "type": "file_content",
+        "path": "/tmp/upper.txt",
+        "contains": "HELLO WORLD"
+    }
+}

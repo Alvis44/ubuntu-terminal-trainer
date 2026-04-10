@@ -1,0 +1,55 @@
+{
+    "id": "intermediate-system",
+    "order": 5,
+    "level": "intermediate",
+    "title": {
+        "ru": "Системная информация",
+        "en": "System Information"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Узнайте текущего пользователя: **whoami**.",
+                "en": "Find out the current user: **whoami**."
+            },
+            "validate": "^whoami$",
+            "hint": {
+                "ru": "Напишите: whoami",
+                "en": "Type: whoami"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Информация о системе: **uname -a**.",
+                "en": "Get system information: **uname -a**."
+            },
+            "validate": "^uname\\s+-a",
+            "hint": {
+                "ru": "Напишите: uname -a",
+                "en": "Type: uname -a"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите запущенные процессы: **ps aux**.",
+                "en": "View running processes: **ps aux**."
+            },
+            "validate": "^ps\\s+aux",
+            "hint": {
+                "ru": "Напишите: ps aux",
+                "en": "Type: ps aux"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Посмотрите текущую дату: **date**.",
+                "en": "Check the current date: **date**."
+            },
+            "validate": "^date$",
+            "hint": {
+                "ru": "Напишите: date",
+                "en": "Type: date"
+            }
+        }
+    ]
+}

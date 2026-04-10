@@ -1,0 +1,66 @@
+{
+    "id": "advanced-text-processing",
+    "order": 5,
+    "level": "advanced",
+    "title": {
+        "ru": "Продвинутая обработка текста",
+        "en": "Advanced Text Processing"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Создайте файл с данными в формате CSV: `echo 'alice:25:developer\\nbob:30:designer\\ncharlie:35:manager' > /tmp/people.txt`.",
+                "en": "Create a CSV-like data file: `echo 'alice:25:developer\\nbob:30:designer\\ncharlie:35:manager' > /tmp/people.txt`."
+            },
+            "validate": "^echo.*>.*people",
+            "hint": {
+                "ru": "Напишите: echo 'alice:25:developer\\nbob:30:designer\\ncharlie:35:manager' > /tmp/people.txt",
+                "en": "Type: echo 'alice:25:developer\\nbob:30:designer\\ncharlie:35:manager' > /tmp/people.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Извлеките только имена (первое поле) с помощью **cut**: `cut -d: -f1 /tmp/people.txt`. Флаг `-d` задаёт разделитель, а `-f` — номер поля.",
+                "en": "Extract just the names (first field) using **cut**: `cut -d: -f1 /tmp/people.txt`. The `-d` flag sets the delimiter, and `-f` selects the field number."
+            },
+            "validate": "^cut\\s+-d.*-f",
+            "hint": {
+                "ru": "Напишите: cut -d: -f1 /tmp/people.txt",
+                "en": "Type: cut -d: -f1 /tmp/people.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Преобразуйте текст в верхний регистр с помощью **tr**: `cat /tmp/people.txt | tr 'a-z' 'A-Z'`. Команда **tr** заменяет символы.",
+                "en": "Convert text to uppercase using **tr**: `cat /tmp/people.txt | tr 'a-z' 'A-Z'`. The **tr** command translates characters."
+            },
+            "validate": "tr\\s+.*[a-z].*[A-Z]",
+            "hint": {
+                "ru": "Напишите: cat /tmp/people.txt | tr 'a-z' 'A-Z'",
+                "en": "Type: cat /tmp/people.txt | tr 'a-z' 'A-Z'"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Используйте **tee**, чтобы одновременно вывести данные на экран и сохранить в файл: `cat /tmp/people.txt | tee /tmp/backup.txt`.",
+                "en": "Use **tee** to display output and save it to a file at the same time: `cat /tmp/people.txt | tee /tmp/backup.txt`."
+            },
+            "validate": "tee",
+            "hint": {
+                "ru": "Напишите: cat /tmp/people.txt | tee /tmp/backup.txt",
+                "en": "Type: cat /tmp/people.txt | tee /tmp/backup.txt"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Объедините **cut** и **sort** в конвейер, чтобы извлечь возраст и отсортировать по числу: `cut -d: -f2 /tmp/people.txt | sort -n`.",
+                "en": "Combine **cut** and **sort** in a pipeline to extract ages and sort numerically: `cut -d: -f2 /tmp/people.txt | sort -n`."
+            },
+            "validate": "cut.*\\|.*sort",
+            "hint": {
+                "ru": "Напишите: cut -d: -f2 /tmp/people.txt | sort -n",
+                "en": "Type: cut -d: -f2 /tmp/people.txt | sort -n"
+            }
+        }
+    ]
+}

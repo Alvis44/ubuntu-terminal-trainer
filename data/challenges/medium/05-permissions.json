@@ -1,0 +1,18 @@
+{
+    "id": "medium-permissions",
+    "order": 5,
+    "difficulty": "medium",
+    "title": {
+        "ru": "Изменить права",
+        "en": "Change Permissions"
+    },
+    "description": {
+        "ru": "Создайте файл **~/run.sh** и установите ему права **755** (чтение, запись, исполнение для владельца).",
+        "en": "Create a file **~/run.sh** and set its permissions to **755** (read, write, execute for owner)."
+    },
+    "check": {
+        "type": "file_permissions",
+        "path": "/home/user/run.sh",
+        "permissions": "-rwxr-xr-x"
+    }
+}

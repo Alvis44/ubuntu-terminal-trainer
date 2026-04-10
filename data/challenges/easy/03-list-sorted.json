@@ -1,0 +1,17 @@
+{
+    "id": "easy-list-sorted",
+    "order": 3,
+    "difficulty": "easy",
+    "title": {
+        "ru": "Список файлов",
+        "en": "List Files"
+    },
+    "description": {
+        "ru": "Выведите содержимое директории **~/Documents** в подробном формате (с правами, размерами и датами).",
+        "en": "List the contents of **~/Documents** in detailed format (with permissions, sizes and dates)."
+    },
+    "check": {
+        "type": "command",
+        "pattern": "^ls\\s+-l.*Documents"
+    }
+}

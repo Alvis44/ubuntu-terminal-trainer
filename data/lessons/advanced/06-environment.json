@@ -1,0 +1,55 @@
+{
+    "id": "advanced-environment",
+    "order": 6,
+    "level": "advanced",
+    "title": {
+        "ru": "Переменные окружения",
+        "en": "Environment Variables"
+    },
+    "steps": [
+        {
+            "instruction": {
+                "ru": "Просмотрите все переменные окружения с помощью команды **env**. Эти переменные хранят настройки системы и пользователя.",
+                "en": "View all environment variables using the **env** command. These variables store system and user settings."
+            },
+            "validate": "^env$",
+            "hint": {
+                "ru": "Напишите: env",
+                "en": "Type: env"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Проверьте значение переменной HOME: **echo $HOME**. Эта переменная содержит путь к вашей домашней директории.",
+                "en": "Check the value of the HOME variable: **echo $HOME**. This variable contains the path to your home directory."
+            },
+            "validate": "^echo\\s+\\$HOME",
+            "hint": {
+                "ru": "Напишите: echo $HOME",
+                "en": "Type: echo $HOME"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Создайте собственную переменную окружения: **export MYVAR=hello**. Команда **export** делает переменную доступной для дочерних процессов.",
+                "en": "Create your own environment variable: **export MYVAR=hello**. The **export** command makes the variable available to child processes."
+            },
+            "validate": "^export\\s+MYVAR=",
+            "hint": {
+                "ru": "Напишите: export MYVAR=hello",
+                "en": "Type: export MYVAR=hello"
+            }
+        },
+        {
+            "instruction": {
+                "ru": "Убедитесь, что переменная установлена: **echo $MYVAR**. Вы должны увидеть значение `hello`.",
+                "en": "Verify the variable was set: **echo $MYVAR**. You should see the value `hello`."
+            },
+            "validate": "^echo\\s+\\$MYVAR",
+            "hint": {
+                "ru": "Напишите: echo $MYVAR",
+                "en": "Type: echo $MYVAR"
+            }
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "id": "easy-create-file",
+    "order": 1,
+    "difficulty": "easy",
+    "title": {
+        "ru": "Создать файл",
+        "en": "Create a File"
+    },
+    "description": {
+        "ru": "Создайте файл **greeting.txt** в домашней директории (~) с содержимым **Hello, Linux!**",
+        "en": "Create a file **greeting.txt** in the home directory (~) with the content **Hello, Linux!**"
+    },
+    "check": {
+        "type": "file_content",
+        "path": "/home/user/greeting.txt",
+        "contains": "Hello, Linux!"
+    }
+}
